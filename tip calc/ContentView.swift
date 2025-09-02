@@ -101,11 +101,13 @@ struct ContentView: View {
                         emphasize: true
                     )
 
-                    resultRow(
-                        title: "Per person (x\(splitCount))",
-                        value: perPersonTotal.formatted(.currency(code: currencyCode)),
-                        emphasize: true
-                    )
+                    if splitCount > 1 {
+                        resultRow(
+                            title: "Per person (x\(splitCount))",
+                            value: perPersonTotal.formatted(.currency(code: currencyCode)),
+                            emphasize: true
+                        )
+                    }
                 }
             }
             .navigationTitle("Tip Calculator")

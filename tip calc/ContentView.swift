@@ -1,0 +1,24 @@
+//
+//  ContentView.swift
+//  tip calc
+//
+//  Created by Jonas Larson on 02-09-2025.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
